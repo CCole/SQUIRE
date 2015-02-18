@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/getCSV.js"></script>
+    <script type="text/javascript" src="csvtotable/js/jquery.csvToTable.js"></script>
+    <script type="text/javascript" src="csvtotable/js/jquery.tablesorter.dev.js"></script>
+
+    
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+    <link href="css/Normalize.css" rel="stylesheet" media="screen" />
+    <link href="css/Squire.css" rel="stylesheet" media="screen" />
+    <link href="css/csvtotable/csvtable.css" rel="stylesheet" media="screen" />
+    
+    
+    <title>SQUIRE Proof of Concept</title>
+        
+</head>
+
+<body>
+    <header>
+        <div class="page-header">
+            <img id="squireBot" src="images/SQUIRE_Bot2.png" />
+            <hgroup>
+                <h1>SQUIRE <small>Staff Qualifications Information Repository</small></h1>
+
+            </hgroup>
+            
+
+        </div>
+
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">Create Record</a></li>
+            <li><a href="#">Bulk Record Upload</a></li>
+        </ul>
+    </header>
+
+    <article>
+
+        <section>
+            <header>
+                <h2>Upload your staff Qualification Tables in 3 easy steps</h2>
+            </header> 
+            <!--Explain three step process for uploading staff qualifications records -->
+        </section>
+            
+        <section>
+            <div class="input-group input-group-lg">
+                
+                <form id="submitCSV">
+                    <input id="fileChooser" type="file" accept=".csv, text/csv" />
+                    <input type="submit" value="Submit Records" />
+                </form>
+            </div>
+
+            <div id="CSVTable">
+
+            </div>
+        </section>
+    </article>
+
+
+</body>
+</html>
